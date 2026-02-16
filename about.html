@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Ceylon Enovy Luxury Tours</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- Global Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            gold: '#D4AF37',
+                            dark: '#0f172a',
+                            green: '#104F55',
+                            light: '#f8fafc',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Outfit', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-brand-dark text-slate-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300" x-data="{ atTop: true, mobileMenu: false }"
+        @scroll.window="atTop = (window.pageYOffset < 20)">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-serif text-2xl font-bold tracking-wider text-brand-gold">
+                        CEYLON <span class="text-white">ENOVY</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html"
+                        class="text-gray-300 hover:text-brand-gold transition-colors font-medium">Home</a>
+                    <a href="tours.html"
+                        class="text-gray-300 hover:text-brand-gold transition-colors font-medium">Tours</a>
+                    <a href="index.html#services"
+                        class="text-gray-300 hover:text-brand-gold transition-colors font-medium">Services</a>
+                    <a href="about.html"
+                        class="text-white hover:text-brand-gold transition-colors font-medium">About</a>
+                    <a href="contact.html"
+                        class="px-6 py-2 bg-brand-gold text-brand-dark font-bold rounded-full hover:bg-white transition-all transform hover:scale-105 shadow-lg">
+                        Plan My Trip
+                    </a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button @click="mobileMenu = !mobileMenu" class="text-gray-300 hover:text-white focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div x-show="mobileMenu" class="md:hidden glass-nav border-t border-gray-700">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white">Home</a>
+                <a href="tours.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-white bg-gray-900">Tours</a>
+                <a href="about.html"
+                    class="block px-3 py-2 rounded-md text-base font-medium text-white bg-gray-900">About</a>
+                <a href="contact.html"
+                    class="block px-3 py-2 mt-4 text-center rounded-md text-base font-bold bg-brand-gold text-brand-dark">Plan
+                    My Trip</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="relative py-32 bg-brand-dark overflow-hidden">
+        <div class="absolute w-full h-full top-0 left-0">
+            <div class="absolute -top-10 -right-10 w-96 h-96 bg-brand-gold opacity-5 rounded-full filter blur-3xl">
+            </div>
+            <div class="absolute bottom-10 left-10 w-72 h-72 bg-brand-green opacity-10 rounded-full filter blur-3xl">
+            </div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 text-center relative z-10" data-aos="fade-up">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-white mb-8">Our <span
+                    class="text-gradient">Story</span></h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-light leading-relaxed">
+                "Ceylon Enovy was born from a passion to showcase the unparalleled beauty of Sri Lanka with a touch of
+                elegance and absolute comfort."
+            </p>
+        </div>
+    </header>
+
+    <!-- Mission / Values -->
+    <section class="py-16 bg-gray-900 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+                <div data-aos="fade-right">
+                    <h2 class="text-brand-gold uppercase tracking-widest text-sm font-bold mb-4">Our Mission</h2>
+                    <h3 class="text-4xl font-serif font-bold text-white mb-6">Excellence in Every Mile</h3>
+                    <p class="text-gray-400 mb-6 leading-relaxed">
+                        We don't just take you from point A to point B. We curate experiences.
+                        Whether it's the mist-covered hills of Nuwara Eliya or the golden sands of Mirissa,
+                        we ensure your journey is seamless, safe, and luxurious.
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Our commitment is to provide <span class="text-white font-bold">flexible itineraries</span> that
+                        adapt to your mood and pace,
+                        all while traveling in the <span class="text-white font-bold">cleanest, most modern
+                            vehicles</span> on the island.
+                    </p>
+                </div>
+                <div class="relative pl-8" data-aos="fade-left">
+                    <div
+                        class="absolute top-0 left-0 w-full h-full border-2 border-brand-gold rounded-2xl transform -translate-x-4 -translate-y-4 z-0">
+                    </div>
+                    <div
+                        class="bg-gray-800 h-80 w-full rounded-2xl relative z-10 flex items-center justify-center overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand-green to-black opacity-60"></div>
+                        <p class="relative z-20 text-center px-4 text-brand-gold font-serif italic text-2xl">
+                            "Hospitality is not a job, it's our nature."</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats / Highlights -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 text-center">
+                <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="text-4xl font-bold text-brand-gold mb-2">500+</div>
+                    <p class="text-gray-400 text-sm">Happy Travelers</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="text-4xl font-bold text-brand-gold mb-2">100%</div>
+                    <p class="text-gray-400 text-sm">Safety Safety Record</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="text-4xl font-bold text-brand-gold mb-2">50+</div>
+                    <p class="text-gray-400 text-sm">Luxury Vehicles</p>
+                </div>
+                <div class="glass-card p-6 rounded-xl" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="text-4xl font-bold text-brand-gold mb-2">24/7</div>
+                    <p class="text-gray-400 text-sm">Support</p>
+                </div>
+            </div>
+
+            <div class="text-center" data-aos="fade-up">
+                <h3 class="text-3xl font-serif font-bold text-white mb-8">Meet Your Hosts</h3>
+                <p class="text-gray-400 max-w-2xl mx-auto mb-12">Our team of Chauffeur Guides are not just drivers; they
+                    are storytellers, historians, and your local friends.</p>
+                <!-- Add team member cards here if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black pt-8 pb-8 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-gray-500 text-sm">
+            © 2026 Ceylon Enovy. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
