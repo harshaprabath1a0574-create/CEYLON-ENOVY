@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Ceylon Enovy | Flexible Tours & Safety</title>
+    <meta name="description"
+        content="We offer the best tour services in Sri Lanka with flexible itineraries, safety-first protocols, and unmatched hospitality. Customize your perfect trip with Ceylon Enovy.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F4CF57',
+                            dark: '#AA8C2C',
+                        },
+                        dark: {
+                            DEFAULT: '#0F172A',
+                            surface: '#1E293B',
+                        },
+                        ceylon: {
+                            green: '#2C5F2D',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-dark font-sans">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-dark/95 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl lg:text-3xl font-serif font-bold tracking-widest uppercase flex items-center gap-2">
+                <span class="text-gold"><i class="fa-solid fa-leaf"></i></span> Ceylon Enovy
+            </a>
+
+            <div class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wider">
+                <a href="index.html" class="hover:text-gold transition-colors">HOME</a>
+                <a href="index.html#about" class="hover:text-gold transition-colors">ABOUT</a>
+                <a href="vehicle.html" class="hover:text-gold transition-colors">OUR FLEET</a>
+                <a href="services.html" class="text-gold">SERVICES</a>
+                <a href="contact.html"
+                    class="px-6 py-2 border-2 border-gold text-gold hover:bg-gold hover:text-dark transition-all rounded-full">PLAN
+                    NOW</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - reusing JS logic -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-dark/95 flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300 lg:hidden z-[100]">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl text-gold">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        <a href="index.html" class="text-xl hover:text-gold">HOME</a>
+        <a href="index.html#about" class="text-xl hover:text-gold">ABOUT</a>
+        <a href="vehicle.html" class="text-xl hover:text-gold">OUR FLEET</a>
+        <a href="services.html" class="text-xl hover:text-gold">SERVICES</a>
+        <a href="contact.html" class="px-8 py-3 bg-gold text-dark font-bold rounded-full">PLAN NOW</a>
+    </div>
+
+
+    <header class="pt-32 pb-20 bg-dark text-white text-center">
+        <h1 class="text-4xl lg:text-6xl font-serif font-bold mb-4 fade-up">Our Premium Services</h1>
+        <p class="text-gold tracking-widest uppercase text-sm fade-up delay-100">Tailored for Your Satisfaction</p>
+    </header>
+
+    <!-- Flexibility Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <div class="lg:w-1/2 fade-right">
+                    <img src="https://images.unsplash.com/photo-1549429402-9904d9c02507?q=80&w=2070&auto=format&fit=crop"
+                        alt="Sri Lanka Scenic Train" class="rounded-xl shadow-2xl">
+                </div>
+                <div class="lg:w-1/2 fade-left">
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6">Any Tour, Any Itinerary</h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        We don't believe in one-size-fits-all. Whether you want to explore the ancient ruins of
+                        Anuradhapura, surf in Arugam Bay, or relax in the cool hills of Nuwara Eliya, we adapt to YOU.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Change your plans last minute? Want to stay longer at a waterfall? No problem. Our flexibility
+                        is our promise.
+                    </p>
+
+                    <a href="contact.html" class="text-gold font-bold hover:underline flex items-center gap-2">
+                        Customize Your Tour <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitality & Safety Grid -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl font-serif font-bold text-dark mb-4">The Ceylon Enovy Standard</h2>
+                <div class="w-24 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div
+                    class="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 fade-up delay-100">
+                    <div class="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-hands-praying text-4xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-serif">True Hospitality</h3>
+                    <p class="text-gray-600 text-sm">We treat you like family. Experience the genuine warmth and care
+                        that Sri Lanka is famous for.</p>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 fade-up delay-200">
+                    <div class="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-car-on text-4xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-serif">Safe & Clean</h3>
+                    <p class="text-gray-600 text-sm">Our vehicles are sanitized before every trip. Our drivers are
+                        trained in defensive driving and safety protocols.</p>
+                </div>
+
+                <div
+                    class="bg-white p-10 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 fade-up delay-300">
+                    <div class="w-20 h-20 bg-gold/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fa-solid fa-star text-4xl text-gold"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4 font-serif">VIP Comfort</h3>
+                    <p class="text-gray-600 text-sm">From complimentary water to WiFi and charging ports, we ensure
+                        every mile is a pleasure.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Ceylon Enovy. Excellence in Motion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

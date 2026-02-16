@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Luxury Fleet | Ceylon Enovy | Toyota Hiace Dark Prime</title>
+    <meta name="description"
+        content="Book our premium Black Toyota Hiace 2015 Dark Prime. Cleanest, most comfortable luxury van for Sri Lanka tours with experienced drivers.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F4CF57',
+                            dark: '#AA8C2C',
+                        },
+                        dark: {
+                            DEFAULT: '#0F172A',
+                            surface: '#1E293B',
+                        },
+                        ceylon: {
+                            green: '#2C5F2D',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-dark font-sans">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-dark/95 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl lg:text-3xl font-serif font-bold tracking-widest uppercase flex items-center gap-2">
+                <span class="text-gold"><i class="fa-solid fa-leaf"></i></span> Ceylon Enovy
+            </a>
+
+            <div class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wider">
+                <a href="index.html" class="hover:text-gold transition-colors">HOME</a>
+                <a href="index.html#about" class="hover:text-gold transition-colors">ABOUT</a>
+                <a href="vehicle.html" class="text-gold">OUR FLEET</a>
+                <a href="services.html" class="hover:text-gold transition-colors">SERVICES</a>
+                <a href="contact.html"
+                    class="px-6 py-2 border-2 border-gold text-gold hover:bg-gold hover:text-dark transition-all rounded-full">PLAN
+                    NOW</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-dark/95 flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300 lg:hidden">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl text-gold">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        <a href="index.html" class="text-xl hover:text-gold">HOME</a>
+        <a href="index.html#about" class="text-xl hover:text-gold">ABOUT</a>
+        <a href="vehicle.html" class="text-xl hover:text-gold">OUR FLEET</a>
+        <a href="services.html" class="text-xl hover:text-gold">SERVICES</a>
+        <a href="contact.html" class="px-8 py-3 bg-gold text-dark font-bold rounded-full">PLAN NOW</a>
+    </div>
+
+    <!-- Page Header -->
+    <header class="pt-32 pb-20 bg-dark text-white text-center">
+        <h1 class="text-4xl lg:text-6xl font-serif font-bold mb-4 fade-up">Our Premium Fleet</h1>
+        <p class="text-gold tracking-widest uppercase text-sm fade-up delay-100">Travel in Unmatched Comfort</p>
+    </header>
+
+    <!-- Main Vehicle Spotlight -->
+    <section class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2 fade-left">
+                    <img src="https://images.unsplash.com/photo-1626847037657-fd3622613ce3?q=80&w=2070&auto=format&fit=crop"
+                        alt="Black Toyota Hiace Exterior" class="rounded-xl shadow-2xl w-full">
+                </div>
+                <div class="lg:w-1/2 fade-right">
+                    <h2 class="text-3xl lg:text-4xl font-serif font-bold mb-6">Toyota Hiace 2015 <span
+                            class="text-gold">Dark Prime</span></h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Our flagship vehicle is the epitome of luxury travel. The "Dark Prime" edition offers a
+                        sophisticated interior with premium finishes, ensuring your journey through Sri Lanka is as
+                        comfortable as it is memorable.
+                        Impeccably maintained and serviced regularly for your safety.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex flex-col gap-2">
+                            <i class="fa-solid fa-chair text-gold text-2xl"></i>
+                            <h4 class="font-bold">Premium Seating</h4>
+                            <p class="text-xs text-gray-500">Reclining leather seats with ample legroom.</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <i class="fa-solid fa-snowflake text-gold text-2xl"></i>
+                            <h4 class="font-bold">Advanced A/C</h4>
+                            <p class="text-xs text-gray-500">Dual-zone climate control for every passenger.</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <i class="fa-solid fa-wifi text-gold text-2xl"></i>
+                            <h4 class="font-bold">Onboard WiFi</h4>
+                            <p class="text-xs text-gray-500">Stay connected throughout your journey.</p>
+                        </div>
+                        <div class="flex flex-col gap-2">
+                            <i class="fa-solid fa-suitcase text-gold text-2xl"></i>
+                            <h4 class="font-bold">Large Trunk</h4>
+                            <p class="text-xs text-gray-500">Spacious storage for all luggage types.</p>
+                        </div>
+                    </div>
+
+                    <a href="contact.html"
+                        class="inline-block px-8 py-4 bg-gold text-dark font-bold rounded-lg hover:bg-dark hover:text-white transition-all shadow-lg shadow-gold/20">
+                        Book This Vehicle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interior Gallery -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-3xl font-serif font-bold text-dark mb-4">Interior Excellence</h2>
+                <div class="w-16 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-xl shadow-lg fade-up delay-100 h-64">
+                    <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?q=80&w=2070&auto=format&fit=crop"
+                        alt="Premium Interior"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold">Luxury Seating</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg fade-up delay-200 h-64">
+                    <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?q=80&w=2070&auto=format&fit=crop"
+                        alt="Spacious Cabin"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold">Spotless Cleanliness</span>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-xl shadow-lg fade-up delay-300 h-64">
+                    <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2021&auto=format&fit=crop"
+                        alt="Scenic View from Window"
+                        class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700">
+                    <div
+                        class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span class="text-white font-bold">Panoramic Views</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Ceylon Enovy. The Best Choice for Sri Lanka Tours.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

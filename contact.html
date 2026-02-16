@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Ceylon Enovy | Plan Your Dream Trip</title>
+    <meta name="description"
+        content="Contact Ceylon Enovy for luxury tour bookings in Sri Lanka. 24/7 support for inquiries about our Toyota Hiace Dark Prime and custom itineraries.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#F4CF57',
+                            dark: '#AA8C2C',
+                        },
+                        dark: {
+                            DEFAULT: '#0F172A',
+                            surface: '#1E293B',
+                        },
+                        ceylon: {
+                            green: '#2C5F2D',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Lato"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-dark text-white font-sans">
+
+    <!-- Navigation -->
+    <nav id="navbar"
+        class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 bg-dark/95 shadow-lg text-white">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html"
+                class="text-2xl lg:text-3xl font-serif font-bold tracking-widest uppercase flex items-center gap-2">
+                <span class="text-gold"><i class="fa-solid fa-leaf"></i></span> Ceylon Enovy
+            </a>
+
+            <div class="hidden lg:flex gap-8 items-center text-sm font-semibold tracking-wider">
+                <a href="index.html" class="hover:text-gold transition-colors">HOME</a>
+                <a href="index.html#about" class="hover:text-gold transition-colors">ABOUT</a>
+                <a href="vehicle.html" class="hover:text-gold transition-colors">OUR FLEET</a>
+                <a href="services.html" class="hover:text-gold transition-colors">SERVICES</a>
+                <a href="contact.html"
+                    class="px-6 py-2 border-2 border-gold text-gold bg-gold text-dark transition-all rounded-full">PLAN
+                    NOW</a>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu - reusing JS logic -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-dark/95 flex flex-col items-center justify-center space-y-8 transform translate-x-full transition-transform duration-300 lg:hidden z-[100]">
+        <button id="close-menu-btn" class="absolute top-6 right-6 text-3xl text-gold">
+            <i class="fa-solid fa-times"></i>
+        </button>
+        <a href="index.html" class="text-xl hover:text-gold">HOME</a>
+        <a href="index.html#about" class="text-xl hover:text-gold">ABOUT</a>
+        <a href="vehicle.html" class="text-xl hover:text-gold">OUR FLEET</a>
+        <a href="services.html" class="text-xl hover:text-gold">SERVICES</a>
+        <a href="contact.html" class="px-8 py-3 bg-gold text-dark font-bold rounded-full">PLAN NOW</a>
+    </div>
+
+    <!-- Contact Header -->
+    <header class="pt-32 pb-12 text-center">
+        <h1 class="text-4xl lg:text-6xl font-serif font-bold mb-4 fade-up">Get in Touch</h1>
+        <p class="text-gold tracking-widest uppercase text-sm fade-up delay-100">Start Your Journey Today</p>
+    </header>
+
+    <section class="py-12 pb-24">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="bg-white text-dark rounded-2xl shadow-2xl overflow-hidden flex flex-col lg:flex-row fade-up">
+
+                <!-- Info Side -->
+                <div
+                    class="lg:w-2/5 bg-dark-surface text-white p-12 flex flex-col justify-between relative overflow-hidden">
+                    <!-- Decor -->
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-gold/10 rounded-bl-full"></div>
+
+                    <div>
+                        <h3 class="text-2xl font-serif font-bold mb-6">Contact Information</h3>
+                        <p class="text-gray-400 mb-10">Fill up the form and our Team will get back to you within 24
+                            hours.</p>
+
+                        <div class="space-y-8">
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-phone text-gold text-xl"></i>
+                                <span>+94 7X XXX XXXX</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-envelope text-gold text-xl"></i>
+                                <span>info@ceylonenovy.com</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <i class="fa-solid fa-location-dot text-gold text-xl"></i>
+                                <span>123, Galle Road, Colombo 03, Sri Lanka</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-4 mt-12">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gold hover:text-dark hover:border-gold transition-all"><i
+                                class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gold hover:text-dark hover:border-gold transition-all"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-gray-600 flex items-center justify-center hover:bg-gold hover:text-dark hover:border-gold transition-all"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- Form Side -->
+                <div class="lg:w-3/5 p-12">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="flex flex-col">
+                                <label class="text-sm font-bold text-gray-600 mb-2">First Name</label>
+                                <input type="text"
+                                    class="px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm font-bold text-gray-600 mb-2">Last Name</label>
+                                <input type="text"
+                                    class="px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-6">
+                            <div class="flex flex-col">
+                                <label class="text-sm font-bold text-gray-600 mb-2">Email</label>
+                                <input type="email"
+                                    class="px-4 py-3 bg-gray-50 border border-gold/20 rounded-lg focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all">
+                            </div>
+                            <div class="flex flex-col">
+                                <label class="text-sm font-bold text-gray-600 mb-2">Phone</label>
+                                <input type="tel"
+                                    class="px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all">
+                            </div>
+                        </div>
+
+                        <div class="mb-6">
+                            <label class="text-sm font-bold text-gray-600 mb-2">Message</label>
+                            <textarea rows="4"
+                                placeholder="Tell us about your trip (Dates, Number of people, Interests...)"
+                                class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-all"></textarea>
+                        </div>
+
+                        <button type="button"
+                            class="px-8 py-4 bg-gold text-dark font-bold rounded-lg hover:bg-dark hover:text-white transition-all shadow-lg shadow-gold/20 float-right">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 border-t border-gray-900">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 text-sm">&copy; 2026 Ceylon Enovy. The Best Choice for Sri Lanka Tours.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
